@@ -1,0 +1,69 @@
+<html>
+    <div>
+        <input id="title" type="text" value="" placeholder="title">
+        <input  id="description" type="text" value="" placeholder="description">
+        
+        <button type="button" onclick="todo()">todo</button>
+
+        <div id="content">
+
+        </div>
+    </div>
+    <div id="content"></div>
+    <script>
+        let todos=[];
+        function todo(){
+            // const prevelements = document.getElementById("content");
+            // prevelements.innerHTML=''
+            const title = document.getElementById("title").value;
+            const description = document.getElementById("description").value;
+            todos.push({title,description});
+            const elements = document.getElementById("content");
+            console.log(elements);
+
+            const index = todos.length-1;
+            const innerhtml =`
+                <h1> Title is - ${title} </h1>
+                <h3> Description is - ${description} </h3>    
+                <button id=${index} onclick=markasdone(${index})
+                 > Khatam karo mujhe - ${index} </button> 
+                          
+            `
+            // todos.forEach((td,index) => {
+            //     console.log(td)
+            //     const innerhtml =`
+            //     <h1> Title is - ${td.title} </h1>
+            //     <h3> Description is - ${td.description} </h3>    
+            //     <button id=${index} onclick=${markasdone(index)}
+            //      > Khatam karo mujhe - ${index} </button> 
+            //     <h5 id=${index}> ${ td.done ? "Done" : "Not Done "}</h5>           
+            // `
+            const child = document.createElement("div");
+            child.innerHTML = innerhtml;
+            console.log(child)
+            elements.appendChild(
+                    child
+                )
+            
+            
+        }
+
+       function markasdone(id){
+            todos[id].done ="Done";
+            // console.log(todos);
+            changeTodo(id);
+        }
+
+        function changeTodo(id){
+           let dom = document.querySelector("#content");
+           if(dom.children[id].lastElementChild.innerText == 'Done'){
+            alert("Already Done ")
+            return;
+           }
+           const child = document.createElement("h5");
+           child.innerHTML = `<span> Done </span>`
+           dom.children[id].appendChild(child);
+           
+        }
+    </script>
+</html>
