@@ -1,9 +1,127 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36" version="24.7.17">
   <diagram name="Page-1" id="CzEU1P9eokkoysXgkRT3">
-    <mxGraphModel>
+    <mxGraphModel dx="954" dy="608" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="XgPc_xlX53rlTwXSkYCG-423" value="accept(Roomvisitor v)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="170" y="280" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="XgPc_xlX53rlTwXSkYCG-424" value="visit(SingleRoom s)&lt;div&gt;visit(DeluxeRoom d)&lt;/div&gt;&lt;div&gt;visit(DoubleRoom d2)&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="520" y="280" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="XgPc_xlX53rlTwXSkYCG-425" value="interface RoomElement" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="150" y="250" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="XgPc_xlX53rlTwXSkYCG-426" value="Interface ROomVisitor" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="510" y="248" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="XgPc_xlX53rlTwXSkYCG-427" value="visit(SingleRoom s)=&amp;gt; s.price=100&lt;div&gt;visit(doubleRoom d)=&amp;gt; d.price=200&lt;/div&gt;&lt;div&gt;visit(deluxeRoom d)=&amp;gt; d.price=300&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="400" y="430" width="200" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="XgPc_xlX53rlTwXSkYCG-428" value="RoomPricingVisitor" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="430" y="400" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="XgPc_xlX53rlTwXSkYCG-429" value="RoomManintainenceVisitor" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="647" y="400" width="170" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="XgPc_xlX53rlTwXSkYCG-430" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="490" y="400" as="sourcePoint" />
+            <mxPoint x="540" y="350" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XgPc_xlX53rlTwXSkYCG-431" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="660" y="400" as="sourcePoint" />
+            <mxPoint x="620" y="350" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XgPc_xlX53rlTwXSkYCG-432" value="int roomPrice=0;&lt;div&gt;accept(Roomvisitor v)&lt;/div&gt;&lt;div&gt;v.visit(this)&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="190" y="520" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="XgPc_xlX53rlTwXSkYCG-433" value="SingleRoom" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="25" y="378" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="XgPc_xlX53rlTwXSkYCG-434" value="int roomPrice=0;&lt;div&gt;accept(Roomvisitor v)&lt;/div&gt;&lt;div&gt;v.visit(this)&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="20" y="525" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="XgPc_xlX53rlTwXSkYCG-435" value="int roomPrice=0;&lt;div&gt;accept(Roomvisitor v)&lt;/div&gt;&lt;div&gt;v.visit(this)&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="25" y="400" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="XgPc_xlX53rlTwXSkYCG-436" value="DoubleRoom" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="15" y="498" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="XgPc_xlX53rlTwXSkYCG-437" value="DeluxeRoom" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="200" y="495" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="XgPc_xlX53rlTwXSkYCG-438" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="115" y="390" as="sourcePoint" />
+            <mxPoint x="165" y="340" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XgPc_xlX53rlTwXSkYCG-439" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="140" y="520" as="sourcePoint" />
+            <mxPoint x="200" y="350" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XgPc_xlX53rlTwXSkYCG-440" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="241" y="490" as="sourcePoint" />
+            <mxPoint x="241" y="350" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XgPc_xlX53rlTwXSkYCG-441" value="is a" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="100" y="338" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="XgPc_xlX53rlTwXSkYCG-442" value="is a" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="170" y="440" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="XgPc_xlX53rlTwXSkYCG-443" value="is a" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="240" y="450" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="XgPc_xlX53rlTwXSkYCG-444" value="is a" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="470" y="360" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="XgPc_xlX53rlTwXSkYCG-445" value="is a" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="660" y="360" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="XgPc_xlX53rlTwXSkYCG-446" value="RoomElement single = new SingleRoom()&lt;div&gt;RoomElement double = new DoubleRoom()&lt;/div&gt;&lt;div&gt;RoomVisitor pricing = new RoomPricingVisitor();&lt;/div&gt;&lt;div&gt;sinlge.accept(pricing)&lt;/div&gt;&lt;div&gt;Roommaintatinence maint= new RoomVisitor()&lt;/div&gt;&lt;div&gt;double.accpet(maint)&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="250" y="60" width="300" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="XgPc_xlX53rlTwXSkYCG-447" value="Client" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="364" y="30" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="XgPc_xlX53rlTwXSkYCG-448" value="" style="curved=1;endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="190" y="230" as="sourcePoint" />
+            <mxPoint x="240" y="180" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="240" y="230" />
+              <mxPoint x="190" y="180" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XgPc_xlX53rlTwXSkYCG-449" value="has a" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="115" y="178" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="XgPc_xlX53rlTwXSkYCG-450" value="" style="curved=1;endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="620" y="240" as="sourcePoint" />
+            <mxPoint x="560" y="150" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="595" y="220" />
+              <mxPoint x="640" y="200" />
+              <mxPoint x="815" y="90" />
+              <mxPoint x="545" y="170" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XgPc_xlX53rlTwXSkYCG-451" value="has a" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="705" y="168" width="50" height="30" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
